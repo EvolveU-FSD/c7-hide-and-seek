@@ -1,4 +1,4 @@
-let rooms = ['living room', 'dining room']
+let rooms = ['living room', 'dining room', 'bathroom']
 let hiderLocation
 let seekerLocation
 
