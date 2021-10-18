@@ -1,0 +1,14 @@
+Bugs
+- seeker starts in "undefined" and can find hider before the game starts
+- hider is undefined before start of first game
+- user can enter any room whether it exists or not (input validation)
+
+Features:
+- add hiding spots
+- add listen for clues
+- add hider endpoints?  make it multiplayer?
+- html front end with buttons for move and search choices?
+- multiple hiders
+- help (show me where I am)
+- game ends if we run out of turns
+

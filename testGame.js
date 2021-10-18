@@ -1,4 +1,4 @@
-let hideAndSeek = require('./hideAndSeek')
+let hideAndSeek = require('./model/hideAndSeek')
 
 // play a game
 console.log('Starting a game')
