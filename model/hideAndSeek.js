@@ -8,18 +8,19 @@ function pickOneAtRandom(arrayOfThings) {
     return arrayOfThings[Math.floor(Math.random() * arrayOfThings.length)]
 }
 
-function startGame() {
-    let allRooms = listRooms()
+async function startGame() {
+    let allRooms = await listRooms()
     let hiderRoom = pickOneAtRandom(allRooms)
     hiderRoomName = hiderRoom.name
     hiderHidingSpot = pickOneAtRandom(hiderRoom.hidingSpots)
-    seekerLocation = findRoomByName('front entry')
+    seekerLocation = await findRoomByName('front entry')
     console.log('Don\'t tell the seeker, but the hider is ' + hiderHidingSpot + ' in the ' + hiderRoomName + '\n')
+    setTimeout(() => { console.log('a game was started 5 seconds ago!!!')}, 5000)
 }
 
-function move(roomName) {
+async function move(roomName) {
     console.log('Seeker moved to ', roomName)
-    seekerLocation = findRoomByName(roomName)
+    seekerLocation = await findRoomByName(roomName)
 }
 
 function look() {

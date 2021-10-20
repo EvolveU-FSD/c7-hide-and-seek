@@ -3,16 +3,16 @@ const hideAndSeek = require('../model/hideAndSeek')
 const express = require('express')
 const router = express.Router()
 
-router.get('/startGame', (req, res) => {
-    hideAndSeek.startGame()
+router.get('/startGame', async (req, res) => {
+    await hideAndSeek.startGame()
     res.send('The hider has found a new spot to hide!\nGood Luck!\n')
 })
 
-router.get('/listRooms', (req, res) => {
+router.get('/listRooms', async (req, res) => {
     res.json(hideAndSeek.listRooms())
 })
 
-router.get('/move', (req, res) => {
+router.get('/move', async (req, res) => {
     let room = req.query.room 
     hideAndSeek.move(room)
     res.send('You have moved to the ' + room + '\n')
