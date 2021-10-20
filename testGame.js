@@ -6,7 +6,7 @@ hideAndSeek.startGame()
 
 let rooms = hideAndSeek.listRooms()
 console.log('We can search ', rooms)
-hideAndSeek.move(rooms[0])
+hideAndSeek.move(rooms[0].name)
 
 let found = hideAndSeek.search()
 if (found) {
