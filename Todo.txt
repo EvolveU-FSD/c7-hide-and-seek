@@ -1,4 +1,4 @@
-Bugs
+Bugs:
 - user can enter any room whether it exists or not (input validation)
 
 Features:
@@ -9,7 +9,7 @@ Features:
 - game ends if we run out of turns
 
 Done:
+- add hiding spots
 - seeker starts in "undefined" and can find hider before the game starts
 - hider is undefined before start of first game
-- add hiding spots
 - help (show me where I am)

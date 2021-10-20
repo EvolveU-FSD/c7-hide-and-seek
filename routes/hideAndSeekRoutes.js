@@ -22,7 +22,7 @@ router.get('/look', (req, res) => {
     let seekerLocation = hideAndSeek.look()
     let message = 'You are in the ' + seekerLocation.name + '\n'
     message += 'Obvious hiding places are:\n'
-    seekerLocation.hidingSpots.forEach(hidingSpot => {
+    seekerLocation.hidingSpots.forEach((hidingSpot) => {
         message += '  ' + hidingSpot + '\n'
     })
     res.send(message)
@@ -36,7 +36,7 @@ router.get('/search', (req, res) => {
         message = 'You just found the hider!'
     }
     else {
-       message = 'You search and find no-one!'
+       message = 'You search ' + spot + ' and find no-one!'
     }
     res.send(message + '\n')
 })
