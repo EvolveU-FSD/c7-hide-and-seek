@@ -1,4 +1,4 @@
-let { findRoomByName, listRooms } = require('./room')
+let { findRoomByName, listRooms } = require('./roomDb')
 
 let seekerLocation
 let hiderRoomName

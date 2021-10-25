@@ -9,7 +9,7 @@ router.get('/startGame', async (req, res) => {
 })
 
 router.get('/listRooms', async (req, res) => {
-    res.json(hideAndSeek.listRooms())
+    res.json(await hideAndSeek.listRooms())
 })
 
 router.get('/move', async (req, res) => {
