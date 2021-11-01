@@ -1,4 +1,4 @@
-let { createRoom } = require('./roomDb')
+let { createRoom } = require('./roomMongoose')
 
 // load initial rooms
 async function loadInitialData() {
