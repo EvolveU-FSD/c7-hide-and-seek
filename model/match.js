@@ -20,7 +20,7 @@ matchSchema.methods.look = async function() {
 
 matchSchema.methods.search = function(hidingSpot) {
     return (this.seekerRoomName === this.hiderRoomName)
-        && (this.hidingSpot === this.hiderHidingSpot)
+        && (hidingSpot === this.hiderHidingSpot)
 }
 
 const Match = mongoose.model('Match', matchSchema)
