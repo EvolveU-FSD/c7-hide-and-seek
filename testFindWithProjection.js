@@ -1,4 +1,4 @@
-const mongoDb = require('./db')
+const mongoDb = require('./model/db')
 
 async function main() {
     let collection = await mongoDb.getCollection('rooms')
